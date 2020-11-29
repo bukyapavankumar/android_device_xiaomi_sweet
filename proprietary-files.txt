@@ -76,10 +76,6 @@ vendor/lib64/libbtnv.so|22ac0a0e75e1518183fe2bc2666a6cade378b7ec
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|e0b2052e053de5572448bb81830d8adbe3423f68
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|eea12b9cc470b2293c7013e309bb3fbf89c5e21d
 
-# Bluetooth (aptX) - from Pixel 4A RP1A.200720.011
-system_ext/lib64/libaptXHD_encoder.so|e13fa70c97caaa24d061678bdee608eb8850a69e
-system_ext/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
-
 # CDSP - from LA.UM.9.1.r1-09100-SMxxx0.0
 vendor/bin/cdsprpcd|8f541eab74d52bff8d73f7f280e085c4bf706e99
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
