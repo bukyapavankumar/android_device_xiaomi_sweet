@@ -248,8 +248,7 @@ MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service
+TARGET_PROVIDES_POWERHAL := true
 
 # Protobuf
 PRODUCT_PACKAGES += \
