@@ -14,6 +14,8 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 # Inherit some 404 common configuration.
 $(call inherit-product, vendor/404/configs/common.mk)
 
+TARGET_BOOT_ANIMATION_RES := 1080
+
 PRODUCT_NAME := p404_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Redmi
