@@ -8,11 +8,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+TARGET_GAPPS_ARCH := arm64
+
 # Inherit from sweet device
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some 404 common configuration.
 $(call inherit-product, vendor/404/configs/common.mk)
+
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
 
