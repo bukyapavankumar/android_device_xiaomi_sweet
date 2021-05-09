@@ -277,6 +277,9 @@ vendor/lib64/libVDClearShot.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libXMFD_AgeGender.so
 vendor/lib64/mibokeh_712_opencl.bin
+vendor/lib64/libmegface.so
+vendor/lib/libmegface.so
+vendor/lib64/libMegviiFacepp-0.5.2.so
 
 # Camera-arcsoft
 vendor/lib64/libarcsoft_beautyshot.so
