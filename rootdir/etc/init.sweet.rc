@@ -37,9 +37,6 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
-on post-fs
-    insmod /vendor/lib/modules/fpc1540.ko
-
 # Bind NFC on Indian device
 on post-fs && property:ro.product.device=sweetin
     mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
