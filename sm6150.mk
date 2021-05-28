@@ -266,6 +266,7 @@ PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
 # Qti Components
+TARGET_BOARD_PLATFORM := sm6150
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt
