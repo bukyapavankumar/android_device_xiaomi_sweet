@@ -231,9 +231,6 @@ PRODUCT_COPY_FILES += \
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay/packages/apps/CarrierConfig
-
 # Perf
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
@@ -266,7 +263,8 @@ TARGET_BOARD_PLATFORM := sm6150
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
     bt \
-    wlan
+    wlan \
+    overlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
@@ -349,7 +347,7 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiResTarget
 
 ifneq ($(TARGET_DEVICE),phoenix,sweet)
 PRODUCT_COPY_FILES += \
