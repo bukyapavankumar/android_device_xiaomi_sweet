@@ -14,4 +14,4 @@ ro.crypto.volume.options=::v2
 # Display
 vendor.display.disable_idle_time_hdr=1
 vendor.display.disable_idle_time_video=1
-vendor.display.disable_idle_timeout=1
+vendor.display.skip_refresh_rate_change=1
