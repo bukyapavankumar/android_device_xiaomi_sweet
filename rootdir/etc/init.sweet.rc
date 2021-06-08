@@ -37,6 +37,11 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
+on boot
+    # Allow system to modify exposure adjustment state
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/msm_fb_ea_enable
+    
 # Bind NFC on Indian device
 on post-fs && property:ro.product.device=sweetin
     mount none /dev/null /system/app/NfcNci/NfcNci.apk bind
