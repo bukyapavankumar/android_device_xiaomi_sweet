@@ -18,7 +18,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 TARGET_OTA_ASSERT_DEVICE := sweet,sweetin
 
 # Kernel
-TARGET_KERNEL_CONFIG := sweet_user_defconfig
+TARGET_KERNEL_CONFIG := sweet_defconfig
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
